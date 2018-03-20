@@ -4,7 +4,7 @@ Last Modified: January 13, 2017
 
 ### What is this repository for? ###
 
-* COMP2401 Assignment 1
+* COMP2401 - Systems Programming - Assignment 1
 * Objectives: To understand and implement bit manipulation of integers to transmit a message by correctly setting parity bits. Then receive correct messages with the functions for error correction and converting from short integer to char.
 
 ### How do I get set up? ###
@@ -28,26 +28,26 @@ The program should output the uncorrected transmitted message and the corrected 
 
 
 ### Sample Usage ###
-$ ./tran
+$ ./tran <br />
 Please enter a message to transmit: hello world
 
 
-Transmitted message (short integers):
+Transmitted message (short integers): <br />
 3732 3144 3264 7360 3326 1280 3945 7420 3378 2240 3286 
 
-$ ./recv
+$ ./recv <br />
 Please enter the transmitted message: 3732 3144 3264 7360 3326 1280 3945 7420 3378 2240 3286
 
 
-Transmitted Message:
+Transmitted Message: <br />
 xel�o w�bLl
 
 
-Corrected Transmitted Message:
+Corrected Transmitted Message: <br />
 hello world
 
 
 ### Authors ###
 
-Tamara Alhajj
+Tamara Alhajj <br />
 Prof. Doron Nussbaum
