@@ -1,10 +1,11 @@
-# README #
+# Error Correction Code Using Bit Manipulation #
+
+Last Modified: January 13, 2017
 
 ### What is this repository for? ###
 
-* Date: January 13, 2017
-* COMP2401 Assignment 1 Part 2 Programming – Error Correction Code
-* Objective: To understand and implement bit manipulation of integers
+* COMP2401 Assignment 1
+* Objectives: To understand and implement bit manipulation of integers to transmit a message by correctly setting parity bits. Then receive correct messages with the functions for error correction and converting from short integer to char.
 
 ### How do I get set up? ###
 
@@ -15,17 +16,38 @@ Compile the receive program
 gcc –o recv receive.c bit_manipulation.c
 
 Start the transmit program with ./tran
+
 The program will prompt the user to enter a message.
 Then print the transmitted message as a sequence of short integers.
-Objective: correctly setting the parity bits
 
 Start the receive message with ./recv
+
 The program will prompt the user to enter the transmitted message. 
 Here you will have to copy the output from transmit program. 
 The program should output the uncorrected transmitted message and the corrected message.
-Objective: Correctly completing the functions for error correction and converting from short integer to char
+
+
+### Sample Usage ###
+$ ./tran
+Please enter a message to transmit: hello world
+
+
+Transmitted message (short integers):
+3732 3144 3264 7360 3326 1280 3945 7420 3378 2240 3286 
+
+$ ./recv
+Please enter the transmitted message: 3732 3144 3264 7360 3326 1280 3945 7420 3378 2240 3286
+
+
+Transmitted Message:
+xel�o w�bLl
+
+
+Corrected Transmitted Message:
+hello world
+
 
 ### Authors ###
 
+Tamara Alhajj
 Prof. Doron Nussbaum
-Student Tamara Alhajj
